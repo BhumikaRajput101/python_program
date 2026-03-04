@@ -1,0 +1,14 @@
+#Inheritance (single inheritance)
+class Dog():
+    #costructor
+    def __init__ (self,name,age):
+        self.name=name
+        self.age=age
+class dog(Dog):
+    def __init__ (self,owener , breed , name ,age):
+        super().__init__(name,age)
+        self.owener=owener
+        self.breed=breed
+
+dog2=dog('uncle','jarmensefat','mohit',5)
+print(dog2.name)
