@@ -1,4 +1,4 @@
-#magic method 
+#Custom Exception
 class dobexception(Exception):
     pass
 
@@ -11,4 +11,5 @@ try :
  else: 
     raise dobexception()
 except dobexception :
+
     print("sorry your age should be  between 20 and 30")
